@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import CriptoDonativo from "./CriptoDonativo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="text-4xl font-bold text-center my-6 text-blue-900">LABORATÓRIO WEB3 <span className="animate-pulse text-black">*</span> </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <CriptoDonativo
+          titulo="Cripto Donativo"
+          descricao="Faça uma doaçõa cripto para o o instituto de apostas"
+        />
+        <CriptoDonativo
+          titulo="Cripto Game"
+          descricao="Faça uma doaçõa cripto para o o instituto de apostas"
+        />
+        <CriptoDonativo
+          titulo="Cripto Votate"
+          descricao="Faça uma doaçõa cripto para o o instituto de apostas"
+        />
+      </div>
     </div>
   );
 }
